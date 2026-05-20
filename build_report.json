@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-20T17:17:02",
+  "generated_at": "2026-05-20T23:19:11",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/minis-software-lab/apps/Image2Studio",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
-  "apk_size_bytes": 1237642,
-  "apk_sha256": "ad4b7d7303966aef81a9fb56e575eeaceefc7a5f3d95dda18888228a30a52fe7",
+  "apk_size_bytes": 1241744,
+  "apk_sha256": "61afa12bd01265e7825b6b79e747ef011ff532de931f7ca2456f2eb6fccf7ea1",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "26",
-    "versionName": "2.2.16",
+    "versionCode": "101",
+    "versionName": "1.0.1",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -90,7 +90,7 @@
     }
   ],
   "signature_verify_output": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
-  "signing": "fixed project debug key for Image2Studio from /var/minis/shared/minis-software-lab/keystores",
+  "signing": "Image2Studio dedicated release keystore (alias: image2studio). Keystore is stored locally and not committed.",
   "release_files": [
     "DELIVERY.md",
     "RELEASE_CHECKLIST.md",

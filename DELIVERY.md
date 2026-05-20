@@ -3,10 +3,10 @@
 ## APK
 
 - 文件：`Image2Studio.apk`
-- 大小：1237642 bytes
-- SHA256：`ad4b7d7303966aef81a9fb56e575eeaceefc7a5f3d95dda18888228a30a52fe7`
+- 大小：1241744 bytes
+- SHA256：`61afa12bd01265e7825b6b79e747ef011ff532de931f7ca2456f2eb6fccf7ea1`
 - 包名：`cc.minis.image2studio`
-- 版本：versionCode `26` / versionName `2.2.16`
+- 版本：versionCode `101` / versionName `1.0.1`
 
 ## 权限与风险
 
@@ -22,7 +22,7 @@
 
 ## 签名状态
 
-Debug 签名，用于侧载测试。正式上架前请替换为正式 keystore。
+Image2Studio 专用正式签名证书签名。后续版本必须继续使用同一证书以支持覆盖升级。
 
 ```text
 Verifies
@@ -45,4 +45,4 @@ Number of signers: 1
 
 ## 安装说明
 
-将 APK 发送到 Android 设备，允许“安装未知来源应用”后安装。若系统提示风险，这是 debug/侧载 APK 常见提示，不代表 APK 一定有恶意行为。
+将 APK 发送到 Android 设备，允许“安装未知来源应用”后安装。后续版本需使用同一签名证书构建，才能覆盖升级。
