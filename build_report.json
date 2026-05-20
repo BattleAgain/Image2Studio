@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-05-20T17:17:02",
+  "generator_version": "3.5.0",
+  "app_name": "Image2Studio",
+  "project_dir": "/var/minis/shared/minis-software-lab/apps/Image2Studio",
+  "apk_path": "/var/minis/attachments/Image2Studio.apk",
+  "apk_size_bytes": 1237642,
+  "apk_sha256": "ad4b7d7303966aef81a9fb56e575eeaceefc7a5f3d95dda18888228a30a52fe7",
+  "manifest": {
+    "package": "cc.minis.image2studio",
+    "versionCode": "26",
+    "versionName": "2.2.16",
+    "minSdk": "23",
+    "targetSdk": "35",
+    "label": "Image2Studio",
+    "icon": "@drawable/ic_launcher",
+    "allowBackup": "false",
+    "usesCleartextTraffic": "false",
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "hasLauncherActivity": true,
+    "exportedLauncher": true
+  },
+  "permission_risk": {
+    "level": "medium",
+    "dangerous_permissions": [],
+    "reason": "network access declared"
+  },
+  "quality_score": {
+    "passed": 11,
+    "total": 11,
+    "all_passed": true
+  },
+  "checks": [
+    {
+      "name": "package_format",
+      "ok": true,
+      "detail": "cc.minis.image2studio"
+    },
+    {
+      "name": "version_code_present",
+      "ok": true,
+      "detail": "14"
+    },
+    {
+      "name": "version_name_present",
+      "ok": true,
+      "detail": "2.2.4"
+    },
+    {
+      "name": "launcher_activity",
+      "ok": true,
+      "detail": "MAIN/LAUNCHER exported=true"
+    },
+    {
+      "name": "icon_present",
+      "ok": true,
+      "detail": "@drawable/ic_launcher"
+    },
+    {
+      "name": "backup_disabled",
+      "ok": true,
+      "detail": "allowBackup=false"
+    },
+    {
+      "name": "dangerous_permissions",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "cleartext_disabled",
+      "ok": true,
+      "detail": "usesCleartextTraffic=false"
+    },
+    {
+      "name": "target_sdk_modern",
+      "ok": true,
+      "detail": "35"
+    },
+    {
+      "name": "apk_size_reasonable",
+      "ok": true,
+      "detail": "21043"
+    },
+    {
+      "name": "signature_v2_or_v3",
+      "ok": true,
+      "detail": "apksigner verify"
+    }
+  ],
+  "signature_verify_output": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
+  "signing": "fixed project debug key for Image2Studio from /var/minis/shared/minis-software-lab/keystores",
+  "release_files": [
+    "DELIVERY.md",
+    "RELEASE_CHECKLIST.md",
+    "PRIVACY_SUMMARY.md",
+    "SOURCE_MANIFEST.md",
+    "build_report.json",
+    "source.zip"
+  ]
+}

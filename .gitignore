@@ -1,0 +1,38 @@
+# Android / Java build outputs
+out/
+build/
+.gradle/
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Signing keys / secrets
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+.env
+.env.*
+secrets.*
+credentials.*
+
+# Node / web
+node_modules/
+dist/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
