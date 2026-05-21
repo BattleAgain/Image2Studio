@@ -1,6 +1,6 @@
 # 源码清单
 
-生成时间：2026-05-21T10:23:58
+生成时间：2026-05-21T11:38:22
 
 - `.gitignore` — 327 bytes
 - `DELIVERY.md` — 1556 bytes
@@ -11,10 +11,10 @@
 - `SPEC.md` — 2518 bytes
 - `SPEC_V2.md` — 1450 bytes
 - `app/src/main/AndroidManifest.xml` — 1751 bytes
-- `app/src/main/assets/index.html` — 23106 bytes
+- `app/src/main/assets/index.html` — 25687 bytes
 - `app/src/main/java/cc/minis/image2studio/GenerationService.java` — 3871 bytes
 - `app/src/main/java/cc/minis/image2studio/ImageShareProvider.java` — 1758 bytes
-- `app/src/main/java/cc/minis/image2studio/MainActivity.java` — 25251 bytes
+- `app/src/main/java/cc/minis/image2studio/MainActivity.java` — 25880 bytes
 - `app/src/main/res/drawable/ic_launcher.png` — 1304530 bytes
 - `app/src/main/res/values/styles.xml` — 713 bytes
 - `app/src/main/res/xml/file_paths.xml` — 186 bytes
