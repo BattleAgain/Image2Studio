@@ -3,10 +3,10 @@
 ## APK
 
 - 文件：`Image2Studio.apk`
-- 大小：1233459 bytes
-- SHA256：`9f06fd80198bacdd7be2b00eefa855521586dfc6fda9fe8adf1203834cf500e8`
+- 大小：1249912 bytes
+- SHA256：`0688ac88f70ba10e4323cd24afa2e122548fbb50f44307df073646d071c42f37`
 - 包名：`cc.minis.image2studio`
-- 版本：versionCode `230` / versionName `2.3.0`
+- 版本：versionCode `231` / versionName `2.3.1`
 
 ## 权限与风险
 
@@ -22,7 +22,7 @@
 
 ## 签名状态
 
-Debug 签名，用于侧载测试。正式上架前请替换为正式 keystore。
+正式签名，使用 Image2Studio 专用 release keystore；密钥不进入仓库。
 
 ```text
 Verifies

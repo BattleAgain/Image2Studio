@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T15:27:54",
+  "generated_at": "2026-05-21T15:52:55",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
   "apk_size_bytes": 1249912,
-  "apk_sha256": "e98f6a96dc4abc80897eeda7aaf92beead6cd0017a9723c492458656376b9402",
+  "apk_sha256": "0688ac88f70ba10e4323cd24afa2e122548fbb50f44307df073646d071c42f37",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "230",
-    "versionName": "2.3.0",
+    "versionCode": "231",
+    "versionName": "2.3.1",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -46,12 +46,12 @@
     {
       "name": "version_code_present",
       "ok": true,
-      "detail": "230"
+      "detail": "231"
     },
     {
       "name": "version_name_present",
       "ok": true,
-      "detail": "2.3.0"
+      "detail": "2.3.1"
     },
     {
       "name": "launcher_activity",
@@ -86,7 +86,7 @@
     {
       "name": "apk_size_reasonable",
       "ok": true,
-      "detail": "1249912"
+      "detail": "1237555"
     },
     {
       "name": "signature_v2_or_v3",
@@ -95,17 +95,13 @@
     }
   ],
   "signature_verify_output": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
-  "signing": "release keystore: /var/minis/shared/Image2Studio-signing/Image2Studio-release.keystore (passwords from env)",
+  "signing": "Image2Studio release keystore; secrets kept outside repository",
   "release_files": [
-    "DELIVERY.md",
-    "RELEASE_CHECKLIST.md",
-    "PRIVACY_SUMMARY.md",
-    "SOURCE_MANIFEST.md",
-    "build_report.json",
-    "source.zip"
+    "Image2Studio.apk",
+    "Image2Studio_source.zip",
+    "Image2Studio_build_report.json",
+    "Image2Studio_DELIVERY.md",
+    "cloudflare-worker/"
   ],
-  "asset_checks": {
-    "assets/index.html": true,
-    "cloud_payload_includes_apiKey": true
-  }
+  "notes": "v2.3.1 complete repo: Android client + Cloudflare Worker source; fixes image-edit reference image compression/settings persistence."
 }

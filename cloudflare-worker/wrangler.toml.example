@@ -1,0 +1,34 @@
+name = "image2studio-cloud"
+main = "src/worker.js"
+compatibility_date = "2025-12-01"
+workers_dev = true
+
+# Copy this file to wrangler.toml and replace resource IDs with your own.
+# Do not commit real secrets. Configure secrets with:
+#   npx wrangler secret put API_KEY_ENCRYPTION_SECRET
+#   npx wrangler secret put IMAGE2STUDIO_ADMIN_TOKEN
+
+[[d1_databases]]
+binding = "DB"
+database_name = "image2studio_cloud_d1"
+database_id = "YOUR_D1_DATABASE_ID"
+
+[[queues.producers]]
+binding = "TASK_QUEUE"
+queue = "image2studio-tasks"
+
+[[queues.consumers]]
+queue = "image2studio-tasks"
+max_batch_size = 1
+max_batch_timeout = 5
+max_retries = 3
+
+[[kv_namespaces]]
+binding = "RESULTS"
+id = "YOUR_KV_NAMESPACE_ID"
+
+[triggers]
+crons = ["*/2 * * * *"]
+
+[vars]
+ALLOWED_BASE_ORIGINS = "https://factory.pub"
