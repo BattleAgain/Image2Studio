@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T13:59:19",
+  "generated_at": "2026-05-21T14:53:30",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
-  "apk_size_bytes": 1249936,
-  "apk_sha256": "e14d2f01791dd24ae0fd5b2d4d8b943c4401c8becc6b19efe2647f35ee71d01b",
+  "apk_size_bytes": 1241657,
+  "apk_sha256": "05767aeae81cfe13a1773f0ed9c261182ec105cda1b6a435e778af3bf38a0bfb",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "220",
-    "versionName": "2.2.0",
+    "versionCode": "230",
+    "versionName": "2.3.0",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -46,12 +46,12 @@
     {
       "name": "version_code_present",
       "ok": true,
-      "detail": "220"
+      "detail": "230"
     },
     {
       "name": "version_name_present",
       "ok": true,
-      "detail": "2.2.0"
+      "detail": "2.3.0"
     },
     {
       "name": "launcher_activity",
@@ -86,7 +86,7 @@
     {
       "name": "apk_size_reasonable",
       "ok": true,
-      "detail": "1233459"
+      "detail": "1241657"
     },
     {
       "name": "signature_v2_or_v3",
@@ -95,7 +95,7 @@
     }
   ],
   "signature_verify_output": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
-  "signing": "debug key for sideload/testing; replace for store release",
+  "signing": "release keystore: /var/minis/shared/Image2Studio-signing/Image2Studio-release.keystore (passwords from env)",
   "release_files": [
     "DELIVERY.md",
     "RELEASE_CHECKLIST.md",
