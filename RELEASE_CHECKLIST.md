@@ -8,7 +8,7 @@
 
 ## 上架/商用前必须人工确认
 
-- [ ] 确认正式签名证书已安全备份，后续版本继续使用同一证书
+- [ ] 替换 debug keystore，使用正式签名并安全保管 keystore
 - [ ] 确认 app 名称、图标、包名、版本号符合发布计划
 - [ ] 准备隐私政策 URL；即使无联网，也建议说明本地数据存储方式
 - [ ] 如声明 INTERNET，说明联网目的、接口域名、数据用途
@@ -22,8 +22,8 @@
 ## 当前 Manifest 摘要
 
 - 包名：`cc.minis.image2studio`
-- 版本：`14 / 2.2.4`
+- 版本：`104 / 1.0.4`
 - targetSdk：`35`
 - allowBackup：`false`
 - cleartext：`false`
-- 权限：android.permission.INTERNET
+- 权限：android.permission.FOREGROUND_SERVICE、android.permission.FOREGROUND_SERVICE_DATA_SYNC、android.permission.INTERNET、android.permission.POST_NOTIFICATIONS

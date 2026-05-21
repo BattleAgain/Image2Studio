@@ -5,7 +5,7 @@
 ## 数据处理摘要
 
 - 当前权限风险等级：medium
-- 当前声明权限：android.permission.INTERNET
+- 当前声明权限：android.permission.FOREGROUND_SERVICE、android.permission.FOREGROUND_SERVICE_DATA_SYNC、android.permission.INTERNET、android.permission.POST_NOTIFICATIONS
 - 本地数据：应用可能使用 SharedPreferences 保存用户主动输入的数据。
 - 联网能力：已声明 INTERNET，需要说明接口用途和数据传输。
 - 备份策略：Manifest 设置 allowBackup=false，降低系统备份泄漏风险。

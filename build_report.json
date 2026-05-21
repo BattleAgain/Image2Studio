@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T09:26:03",
+  "generated_at": "2026-05-21T10:10:14",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
-  "project_dir": "/var/minis/shared/minis-software-lab/apps/Image2Studio",
+  "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
   "apk_size_bytes": 1245840,
-  "apk_sha256": "768b3c91ba39896d08ccc665c228e43052c5eab191d1c3b6960fab5a921e3781",
+  "apk_sha256": "06b4ba367ffc44d2dbc7343030999ec7c41a057e1b2757b4394200c52c0b9ffb",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "103",
-    "versionName": "1.0.3",
+    "versionCode": "104",
+    "versionName": "1.0.4",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -17,7 +17,10 @@
     "allowBackup": "false",
     "usesCleartextTraffic": "false",
     "permissions": [
-      "android.permission.INTERNET"
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+      "android.permission.INTERNET",
+      "android.permission.POST_NOTIFICATIONS"
     ],
     "hasLauncherActivity": true,
     "exportedLauncher": true
@@ -41,12 +44,12 @@
     {
       "name": "version_code_present",
       "ok": true,
-      "detail": "14"
+      "detail": "104"
     },
     {
       "name": "version_name_present",
       "ok": true,
-      "detail": "2.2.4"
+      "detail": "1.0.4"
     },
     {
       "name": "launcher_activity",
@@ -81,7 +84,7 @@
     {
       "name": "apk_size_reasonable",
       "ok": true,
-      "detail": "21043"
+      "detail": "1233459"
     },
     {
       "name": "signature_v2_or_v3",
@@ -90,7 +93,7 @@
     }
   ],
   "signature_verify_output": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
-  "signing": "Image2Studio dedicated release keystore (alias: image2studio). Keystore is stored locally and not committed.",
+  "signing": "debug key for sideload/testing; replace for store release",
   "release_files": [
     "DELIVERY.md",
     "RELEASE_CHECKLIST.md",
