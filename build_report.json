@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T15:52:55",
+  "generated_at": "2026-05-21T16:14:06",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
-  "apk_size_bytes": 1249912,
-  "apk_sha256": "0688ac88f70ba10e4323cd24afa2e122548fbb50f44307df073646d071c42f37",
+  "apk_size_bytes": 1245816,
+  "apk_sha256": "6f5bdfb94d4ec6df5f5b918fd067faa756de8c1d9fc0b8ea1624d557a2fc8a6c",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "231",
-    "versionName": "2.3.1",
+    "versionCode": "232",
+    "versionName": "2.3.2",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -17,15 +17,11 @@
     "allowBackup": "false",
     "usesCleartextTraffic": "false",
     "permissions": [
-      "android.permission.ACCESS_NETWORK_STATE",
-      "android.permission.FOREGROUND_SERVICE",
-      "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
-      "android.permission.INTERNET",
-      "android.permission.POST_NOTIFICATIONS",
-      "android.permission.WAKE_LOCK"
+      "android.permission.INTERNET"
     ],
     "hasLauncherActivity": true,
-    "exportedLauncher": true
+    "exportedLauncher": true,
+    "hasGenerationService": false
   },
   "permission_risk": {
     "level": "medium",
@@ -46,12 +42,12 @@
     {
       "name": "version_code_present",
       "ok": true,
-      "detail": "231"
+      "detail": "232"
     },
     {
       "name": "version_name_present",
       "ok": true,
-      "detail": "2.3.1"
+      "detail": "2.3.2"
     },
     {
       "name": "launcher_activity",
@@ -103,5 +99,5 @@
     "Image2Studio_DELIVERY.md",
     "cloudflare-worker/"
   ],
-  "notes": "v2.3.1 complete repo: Android client + Cloudflare Worker source; fixes image-edit reference image compression/settings persistence."
+  "notes": "v2.3.2 removes notification foreground keep-alive permissions/service, adds edit progress logs, fixes history delete/clear refresh."
 }

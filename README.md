@@ -4,7 +4,7 @@ Image2Studio 是一个 Android 端 image2 AI 生图与图生图工具，支持 O
 
 ## 这一版开始的仓库原则
 
-从 `v2.3.1` 开始，GitHub 仓库保持完整交付：
+从 `v2.3.2` 开始，GitHub 仓库保持完整交付：
 
 - Android APK 客户端源码；
 - Cloudflare Worker 云任务服务端源码；
@@ -19,8 +19,11 @@ Image2Studio 是一个 Android 端 image2 AI 生图与图生图工具，支持 O
 - 文生图：`/v1/images/generations`
 - 图生图 / 图片编辑：`/v1/images/edits`
 - 云任务模式：App 提交任务，Worker + Queue 后台生成，App 轮询恢复
+- 移除通知保活/前台服务/WakeLock 权限，云端任务不依赖本机后台保活
 - Android Photo Picker 导入参考图
 - 图生图参考图上传前压缩，避免大图/部分 file uri 导致失败
+- 图生图云任务显示和文生图一致的任务进度/任务ID/等待日志
+- 历史记录删除/清空改为同步返回结果，避免 WebView confirm 与异步刷新问题
 - 生成结果本地历史
 - 分享、编辑、保存、单条删除历史
 - 图生图独立结果区

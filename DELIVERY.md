@@ -3,10 +3,10 @@
 ## APK
 
 - 文件：`Image2Studio.apk`
-- 大小：1249912 bytes
-- SHA256：`0688ac88f70ba10e4323cd24afa2e122548fbb50f44307df073646d071c42f37`
+- 大小：1245816 bytes
+- SHA256：`6f5bdfb94d4ec6df5f5b918fd067faa756de8c1d9fc0b8ea1624d557a2fc8a6c`
 - 包名：`cc.minis.image2studio`
-- 版本：versionCode `231` / versionName `2.3.1`
+- 版本：versionCode `232` / versionName `2.3.2`
 
 ## 权限与风险
 
@@ -46,3 +46,10 @@ Number of signers: 1
 ## 安装说明
 
 将 APK 发送到 Android 设备，允许“安装未知来源应用”后安装。若系统提示风险，这是 debug/侧载 APK 常见提示，不代表 APK 一定有恶意行为。
+
+
+## v2.3.2 说明
+
+- 删除通知保活入口、前台服务、WakeLock/WiFi 锁和相关权限。
+- 图生图云任务显示与文生图一致的进度日志。
+- 历史删除/清空改为同步返回结果，避免 WebView confirm 和异步刷新问题。
