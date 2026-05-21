@@ -4,13 +4,13 @@
 
 - 文件：`Image2Studio.apk`
 - 大小：1233459 bytes
-- SHA256：`9fc0c87cff679d9465b67e415590b50e4173d57da2ad692fc01931b64d4ae607`
+- SHA256：`0681029bf78692f9dae19da50dba8f1a82af7036e1bc6ca8c9cba62d154d1852`
 - 包名：`cc.minis.image2studio`
-- 版本：versionCode `104` / versionName `1.0.4`
+- 版本：versionCode `105` / versionName `1.0.5`
 
 ## 权限与风险
 
-- 权限：android.permission.FOREGROUND_SERVICE、android.permission.FOREGROUND_SERVICE_DATA_SYNC、android.permission.INTERNET、android.permission.POST_NOTIFICATIONS
+- 权限：android.permission.ACCESS_NETWORK_STATE、android.permission.FOREGROUND_SERVICE、android.permission.FOREGROUND_SERVICE_DATA_SYNC、android.permission.INTERNET、android.permission.POST_NOTIFICATIONS、android.permission.WAKE_LOCK
 - 风险等级：medium（network access declared）
 
 ## 质量检查

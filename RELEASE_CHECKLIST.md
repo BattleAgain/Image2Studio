@@ -22,8 +22,8 @@
 ## 当前 Manifest 摘要
 
 - 包名：`cc.minis.image2studio`
-- 版本：`104 / 1.0.4`
+- 版本：`105 / 1.0.5`
 - targetSdk：`35`
 - allowBackup：`false`
 - cleartext：`false`
-- 权限：android.permission.FOREGROUND_SERVICE、android.permission.FOREGROUND_SERVICE_DATA_SYNC、android.permission.INTERNET、android.permission.POST_NOTIFICATIONS
+- 权限：android.permission.ACCESS_NETWORK_STATE、android.permission.FOREGROUND_SERVICE、android.permission.FOREGROUND_SERVICE_DATA_SYNC、android.permission.INTERNET、android.permission.POST_NOTIFICATIONS、android.permission.WAKE_LOCK

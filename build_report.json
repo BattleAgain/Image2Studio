@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T10:10:14",
+  "generated_at": "2026-05-21T10:23:58",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
   "apk_size_bytes": 1245840,
-  "apk_sha256": "06b4ba367ffc44d2dbc7343030999ec7c41a057e1b2757b4394200c52c0b9ffb",
+  "apk_sha256": "c63d7e5b21d34261e1cdeb3ad0657cab101b6185f80740740740066e324e2158",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "104",
-    "versionName": "1.0.4",
+    "versionCode": "105",
+    "versionName": "1.0.5",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -17,10 +17,12 @@
     "allowBackup": "false",
     "usesCleartextTraffic": "false",
     "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
       "android.permission.FOREGROUND_SERVICE",
       "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
       "android.permission.INTERNET",
-      "android.permission.POST_NOTIFICATIONS"
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.WAKE_LOCK"
     ],
     "hasLauncherActivity": true,
     "exportedLauncher": true
@@ -44,12 +46,12 @@
     {
       "name": "version_code_present",
       "ok": true,
-      "detail": "104"
+      "detail": "105"
     },
     {
       "name": "version_name_present",
       "ok": true,
-      "detail": "1.0.4"
+      "detail": "1.0.5"
     },
     {
       "name": "launcher_activity",
