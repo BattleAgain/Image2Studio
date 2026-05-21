@@ -4,9 +4,9 @@
 
 - 文件：`Image2Studio.apk`
 - 大小：1241744 bytes
-- SHA256：`61afa12bd01265e7825b6b79e747ef011ff532de931f7ca2456f2eb6fccf7ea1`
+- SHA256：`7eb379fb8d4d11a3eb27a6ec0abbc97d8ded72c592d505e1e119c41510601540`
 - 包名：`cc.minis.image2studio`
-- 版本：versionCode `101` / versionName `1.0.1`
+- 版本：versionCode `102` / versionName `1.0.2`
 
 ## 权限与风险
 
