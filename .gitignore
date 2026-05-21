@@ -7,6 +7,7 @@ local.properties
 *.aab
 *.ap_
 *.dex
+*.zip
 
 # Signing keys / secrets
 *.keystore
