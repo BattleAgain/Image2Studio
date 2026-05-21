@@ -38,3 +38,7 @@ npx wrangler deploy
 - Cloudflare token
 
 仓库只保留 `wrangler.toml.example`。
+
+## 任务记录自动清理
+
+Worker 定时任务会清理创建时间超过 1 小时的 D1 任务记录，并删除对应 KV 图片结果；KV 结果本身也设置 1 小时 TTL。后台 `/admin` 因此只保留最近约 1 小时任务。

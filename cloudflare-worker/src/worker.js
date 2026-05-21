@@ -16,7 +16,7 @@ export default {
       catch (e) { await failOrRetry(msg.body.id, env, e, msg.body.keyCipher); msg.ack(); }
     }
   },
-  async scheduled(event, env, ctx) { ctx.waitUntil(requeueStalled(env)); }
+  async scheduled(event, env, ctx) { ctx.waitUntil(runCron(env)); }
 };
 
 async function handleFetch(request, env, ctx) {
@@ -135,7 +135,7 @@ async function storeResults(id, upstream, env) {
   for (let i=0;i<arr.length;i++) {
     const it = arr[i]; const url = it.url || ''; const b64 = it.b64_json || it.b64 || '';
     if (b64) {
-      await env.RESULTS.put(`tasks/${id}/${i}.b64`, b64, { expirationTtl: 60*60*24*7 });
+      await env.RESULTS.put(`tasks/${id}/${i}.b64`, b64, { expirationTtl: 60*60 });
       out.push({ index:i, url:'', kv:true, fileUrl:`/api/tasks/${id}/kv/${i}` });
     } else if (url) out.push({ index:i, url, kv:false, fileUrl:url });
   }
@@ -170,6 +170,25 @@ async function failOrRetry(id, env, e, keyCipher) {
   } else {
     await env.DB.prepare("UPDATE tasks SET status='failed', retry_count=?, error=?, updated_at=?, finished_at=? WHERE id=?").bind(retry, msg, now, now, id).run();
   }
+}
+
+async function runCron(env) {
+  await requeueStalled(env);
+  await cleanupOldTasks(env);
+}
+
+async function cleanupOldTasks(env) {
+  const cutoff = new Date(Date.now() - 60*60*1000).toISOString();
+  const rs = await env.DB.prepare("SELECT id,result_json FROM tasks WHERE created_at < ? LIMIT 200").bind(cutoff).all();
+  for (const t of rs.results || []) {
+    try {
+      const results = JSON.parse(t.result_json || '[]');
+      for (const r of results) {
+        if (r && r.kv) await env.RESULTS.delete(`tasks/${t.id}/${Number(r.index)||0}.b64`);
+      }
+    } catch(e) {}
+  }
+  await env.DB.prepare("DELETE FROM tasks WHERE created_at < ?").bind(cutoff).run();
 }
 
 async function requeueStalled(env) {
