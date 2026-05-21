@@ -28,7 +28,7 @@ binding = "RESULTS"
 id = "YOUR_KV_NAMESPACE_ID"
 
 [triggers]
-crons = ["*/2 * * * *"]
+crons = ["*/20 * * * *"]
 
 [vars]
 ALLOWED_BASE_ORIGINS = "https://factory.pub"
