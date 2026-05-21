@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-21T14:53:30",
+  "generated_at": "2026-05-21T15:21:39",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
-  "apk_size_bytes": 1241657,
-  "apk_sha256": "05767aeae81cfe13a1773f0ed9c261182ec105cda1b6a435e778af3bf38a0bfb",
+  "apk_size_bytes": 1249912,
+  "apk_sha256": "1af4b3759276ac33ab0a7f48c1880f3f42c053953ae7638c7566074f04d24944",
   "manifest": {
     "package": "cc.minis.image2studio",
     "versionCode": "230",
@@ -86,7 +86,7 @@
     {
       "name": "apk_size_reasonable",
       "ok": true,
-      "detail": "1241657"
+      "detail": "1249912"
     },
     {
       "name": "signature_v2_or_v3",
@@ -103,5 +103,8 @@
     "SOURCE_MANIFEST.md",
     "build_report.json",
     "source.zip"
-  ]
+  ],
+  "asset_checks": {
+    "assets/index.html": true
+  }
 }
