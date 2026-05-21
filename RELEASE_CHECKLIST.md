@@ -22,7 +22,7 @@
 ## 当前 Manifest 摘要
 
 - 包名：`cc.minis.image2studio`
-- 版本：`211 / 2.1.1`
+- 版本：`212 / 2.1.2`
 - targetSdk：`35`
 - allowBackup：`false`
 - cleartext：`false`
