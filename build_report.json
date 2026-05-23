@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T16:14:06",
+  "generated_at": "2026-05-23T15:12:01",
   "generator_version": "3.5.0",
   "app_name": "Image2Studio",
   "project_dir": "/var/minis/shared/Image2Studio-repo",
   "apk_path": "/var/minis/attachments/Image2Studio.apk",
-  "apk_size_bytes": 1245816,
-  "apk_sha256": "6f5bdfb94d4ec6df5f5b918fd067faa756de8c1d9fc0b8ea1624d557a2fc8a6c",
+  "apk_size_bytes": 1233459,
+  "apk_sha256": "6654f155b53ad49e6fe030433b2b13b74e6efefabc18fb0a6c9ae16e990b2a5b",
   "manifest": {
     "package": "cc.minis.image2studio",
-    "versionCode": "232",
-    "versionName": "2.3.2",
+    "versionCode": "239",
+    "versionName": "2.3.9",
     "minSdk": "23",
     "targetSdk": "35",
     "label": "Image2Studio",
@@ -20,8 +20,7 @@
       "android.permission.INTERNET"
     ],
     "hasLauncherActivity": true,
-    "exportedLauncher": true,
-    "hasGenerationService": false
+    "exportedLauncher": true
   },
   "permission_risk": {
     "level": "medium",
@@ -42,12 +41,12 @@
     {
       "name": "version_code_present",
       "ok": true,
-      "detail": "232"
+      "detail": "239"
     },
     {
       "name": "version_name_present",
       "ok": true,
-      "detail": "2.3.2"
+      "detail": "2.3.9"
     },
     {
       "name": "launcher_activity",
@@ -82,7 +81,7 @@
     {
       "name": "apk_size_reasonable",
       "ok": true,
-      "detail": "1237555"
+      "detail": "1233459"
     },
     {
       "name": "signature_v2_or_v3",
@@ -91,13 +90,13 @@
     }
   ],
   "signature_verify_output": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
-  "signing": "Image2Studio release keystore; secrets kept outside repository",
+  "signing": "debug key for sideload/testing; replace for store release",
   "release_files": [
-    "Image2Studio.apk",
-    "Image2Studio_source.zip",
-    "Image2Studio_build_report.json",
-    "Image2Studio_DELIVERY.md",
-    "cloudflare-worker/"
-  ],
-  "notes": "v2.3.2 removes notification foreground keep-alive permissions/service, adds edit progress logs, fixes history delete/clear refresh."
+    "DELIVERY.md",
+    "RELEASE_CHECKLIST.md",
+    "PRIVACY_SUMMARY.md",
+    "SOURCE_MANIFEST.md",
+    "build_report.json",
+    "source.zip"
+  ]
 }
